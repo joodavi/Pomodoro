@@ -44,7 +44,7 @@ body .overlay .content .inputs-params, body .overlay .content .params {
   font-size: 20px;
   font-weight: 300;
   margin: 0 auto;
-  width: 78vw;
+  width: 70vw;
 }
 
 body .overlay .content .inputs-params {
@@ -67,7 +67,7 @@ body .overlay .content .alert {
   height: 0;
   margin-top: 4px;
   text-align: center;
-  width: 78vw;
+  width: 70vw;
 }
 
 body .overlay .closeBtn {
@@ -141,7 +141,7 @@ body .container .pomodoro {
   margin: 0 auto;
   margin-top: 200px;
   padding: 20px;
-  width: 40%;
+  width: 80%;
 }
 
 body .container .pomodoro .work {
@@ -359,7 +359,6 @@ body .container .pomodoro .counter {
     margin: 0 auto;
     margin-top: 200px;
     padding: 20px;
-    width: 80%;
   }
   .container .pomodoro .work {
     display: -webkit-box;
