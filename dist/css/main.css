@@ -11,6 +11,235 @@ body {
   color: #fafafa;
 }
 
+body .overlay {
+  background: #3e819bea;
+  display: block;
+  overflow-x: hidden;
+  position: absolute;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 1;
+  width: 0%;
+}
+
+body .overlay .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 40px;
+  position: relative;
+  width: 80%;
+}
+
+body .overlay .content .inputs-params, body .overlay .content .params {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 auto;
+  width: 78vw;
+}
+
+body .overlay .content .inputs-params {
+  border-radius: 4px;
+  margin-top: 6px;
+  padding: 10px;
+}
+
+body .overlay .content .params {
+  background: #c4c4c4;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 12px;
+}
+
+body .overlay .content .alert {
+  color: #fafafa;
+  font-size: 16px;
+  height: 0;
+  margin-top: 4px;
+  text-align: center;
+  width: 78vw;
+}
+
+body .overlay .closeBtn {
+  float: right;
+  margin-top: 0;
+  position: relative;
+  top: 0;
+  width: 30px;
+}
+
+body .addBtn {
+  position: relative;
+  top: 200px;
+  width: 40px;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+body .container .box-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .box-buttons .buttons {
+  background: #ffffff;
+  border: none;
+  border-radius: 3px;
+  color: #194d57;
+  outline: none;
+  height: 40px;
+  width: 40px;
+}
+
+body .container .box-buttons .buttons .material-icons {
+  font-size: 20px;
+}
+
+body .container .pomodoro {
+  background: #1fbeda;
+  border: 3px solid #000;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 20px;
+  width: 40%;
+}
+
+body .container .pomodoro .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .pomodoro .work h1 {
+  color: #E7E7E7;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+body .container .pomodoro .work .workTimer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  font-size: 46px;
+}
+
+body .container .pomodoro .rest {
+  background: #2097accb;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+}
+
+body .container .pomodoro .rest h1 {
+  color: #E7E7E7;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+body .container .pomodoro .rest .restTimer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #E7E7E7;
+  font-weight: 700;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+}
+
+body .container .pomodoro .cycle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+body .container .pomodoro h1 {
+  color: #E7E7E7;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+body .container .pomodoro .counter {
+  color: #E7E7E7;
+  font-size: 20px;
+}
+
 @media (max-width: 800px) {
   .overlay {
     background: #3e819bea;
@@ -21,7 +250,7 @@ body {
     transition: .1s;
     z-index: 1;
     height: 100%;
-    width: 100%;
+    width: 0%;
     -webkit-transition: all 500ms ease-in-out 0s;
     transition: all 500ms ease-in-out 0s;
   }
