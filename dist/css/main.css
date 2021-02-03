@@ -1,0 +1,223 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #4595b4;
+  color: #fafafa;
+}
+
+@media (max-width: 800px) {
+  .overlay {
+    background: #3e819bea;
+    overflow-x: hidden;
+    padding: 0px;
+    position: absolute;
+    -webkit-transition: .1s;
+    transition: .1s;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 500ms ease-in-out 0s;
+    transition: all 500ms ease-in-out 0s;
+  }
+  .overlay .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px;
+  }
+  .overlay .content .inputs-params, .overlay .content .params {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 auto;
+    width: 78vw;
+  }
+  .overlay .content .inputs-params {
+    border-radius: 4px;
+    margin-top: 6px;
+    padding: 10px;
+  }
+  .overlay .content .params {
+    background: #c4c4c4;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 40px;
+    margin-top: 12px;
+  }
+  .overlay .content .alert {
+    color: #fafafa;
+    font-size: 16px;
+    height: 0;
+    margin-top: 4px;
+    text-align: center;
+    width: 78vw;
+  }
+  .overlay .closeBtn {
+    float: right;
+    margin-top: 0;
+    position: relative;
+    top: 0;
+    width: 30px;
+  }
+  .addBtn {
+    position: relative;
+    top: 200px;
+    width: 40px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .container .box-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container .box-buttons .buttons {
+    background: #ffffff;
+    border: none;
+    border-radius: 3px;
+    color: #194d57;
+    outline: none;
+    height: 40px;
+    width: 40px;
+  }
+  .container .box-buttons .buttons .material-icons {
+    font-size: 20px;
+  }
+  .container .pomodoro {
+    background: #1fbeda;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px;
+    width: 80%;
+  }
+  .container .pomodoro .work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .pomodoro .work h1 {
+    color: #E7E7E7;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .container .pomodoro .work .workTimer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 700;
+    font-size: 46px;
+  }
+  .container .pomodoro .rest {
+    background: #2097accb;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px;
+  }
+  .container .pomodoro .rest h1 {
+    color: #E7E7E7;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .container .pomodoro .rest .restTimer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #E7E7E7;
+    font-weight: 700;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+  }
+  .container .pomodoro .cycle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  .container .pomodoro h1 {
+    color: #E7E7E7;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .container .pomodoro .counter {
+    color: #E7E7E7;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Clock</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+  <link href="/dist/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div id="timer-set" class="overlay">
+    <img src="img/close-black.svg" class="closeBtn" onclick="closeDefinitions()">
+    <div class="content">
+      <input type="number" id="work" class="inputs-params" placeholder="Tempo de Trabalho: 25min">
+      <input type="number" id="rest" class="inputs-params" placeholder="Tempo de Descanso: 5min">
+      <input type="number" id="cycles" class="inputs-params" placeholder="Ciclos: 2">
+      <button class="params" onclick="Params()">Definir</button>
+      <p id="text-alert" class="alert">Lembre-se de definir todos os campos caso altere um dos outros.</p>
+    </div>
+  </div>
+  <img src="img/navigate_next.svg" class="addBtn" onclick="addParams()">
+  <div class="container">
+    <div class="box-buttons">
+      <button id="start" class="buttons">
+        <span class="material-icons">
+          play_arrow
+        </span>
+      </button>
+      <button id="pause" class="buttons">
+        <span class="material-icons">
+          pause
+        </span>
+      </button>
+      <button id="reset" class="buttons">
+        <span class="material-icons">
+          replay
+        </span>
+      </button>
+    </div>
+    <div class="pomodoro">
+      <div class="work">
+        <h1>Trabalho</h1>
+        <div class="workTimer">
+          <p id="workMinutes">25</p><p>:</p><p id="workSeconds">00</p>
+        </div>
+      </div>
+      <div class="rest">
+        <h1>Descanso</h1>
+        <div class="restTimer">
+          <p id="restMinutes">5</p><p>:</p><p id="restSeconds">00</p>
+        </div>
+      </div>
+      <div class="cycle">
+        <h1>Ciclo</h1>
+        <div class="counter">
+          <p id="cycleCounter">0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
